@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gamer and Maker</string>
+    <string name="error_tips">糟糕！加载失败了= = </string>
+    <string name="my_tips">诶，还没做呢~~~~~~ </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fb_bottom_show_behavior" translatable="false">com.typedef.gam.ui.widget.behavior.FloatingShowBehavior</string>
+    <string name="tbLayout_bottom_show_behavior" translatable="false">com.typedef.gam.ui.widget.behavior.TableLayoutShowBehavior</string>
+</resources>

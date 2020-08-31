@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/main_floating_action_btn"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom|end"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="80dp"
+    app:backgroundTint="@color/floating_button"
+    android:foregroundGravity="center"
+    android:foreground="@drawable/ic_arrow_upward_white_24dp"
+    app:layout_behavior="@string/fb_bottom_show_behavior" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="16dp"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/colorBlack"
+        app:tabTextColor="@color/colorGrey"
+        app:layout_behavior="@string/tbLayout_bottom_show_behavior"
+        android:layout_gravity="bottom"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
