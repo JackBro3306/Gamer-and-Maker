@@ -1,7 +1,7 @@
 # Gamer-and-Maker
 基于MVP+Rxjava2+Retrofit2+Dagger2的游戏资讯类app
 ## 项目架构
-本项目分为两部分，服务端和客户端，服务端使用轻量RESTful Web服务框架Jersey，只需要简单的配置就可以搭建一个RESTful风格服务器，数据来源是使用jsoup爬取游资网的网页信息，仅供学习。dao层用mybatis或者hibernate都可以，由于时间安排问题，暂时没有做dao层的数据处理、客户端是基于MVP+RxJava2+Retrofit2+Dagger2，并进行了简单的框架封装，减少重复性的编码工作。本项目的结构组成如下图所示：  
+本项目分为两部分，服务端和客户端，服务端使用轻量RESTful Web服务框架Jersey，只需要简单的配置就可以搭建一个RESTful风格服务器，数据来源是使用jsoup爬取游资网的网页信息，仅供学习。dao层用mybatis或者hibernate都可以，由于时间安排问题，暂时没有做dao层的数据处理、客户端是基于MVP+RxJava2+Retrofit2+Dagger2，并进行了简单的框架封装，减少重复性的编码工作。  
 
 后期打算把indianova的网站资源也加进去，不过是用kotlin+mvvn实现，顺便学习下google官方的jetpack组件包。
 
@@ -27,5 +27,9 @@
     - 关于
 * 搜索
 ## api
-### 信息列表
-https://www.gameres.com/newslistJson?p=1&t=26
+### 推荐
+http://localhost:8080/api/YZInfo/getRecommend
+### 获取标签
+http://localhost:8080/api/YZInfo/getTags
+### 获取文章列表
+http://localhost:8080/api/YZInfo/getNews/tid/{tid}/page/{page}
